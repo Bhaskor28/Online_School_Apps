@@ -23,18 +23,8 @@ class _MyAppState extends State<MyApp> {
           appBar: AppBar(
 
             backgroundColor: Colors.green,
-            title: Text("Galiboy"),
-            actions: [
-              Padding(
-                padding: const EdgeInsets.only(right: 10),
-                child: CircleAvatar(
-                  backgroundImage: NetworkImage(
-                    'https://www.example.com/profile_pic.jpg',
-                  ), // Replace with the actual URL or an AssetImage
-                  radius: 18,
-                ),
-              ),
-            ],
+            title: Text("GP sir Online School"),
+
 
 
 
