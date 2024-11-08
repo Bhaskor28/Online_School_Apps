@@ -163,41 +163,61 @@ class _MyAppState extends State<MyApp> {
 
           drawer: Drawer(
             child: ListView(
+              padding: const EdgeInsets.all(0),
               children: const <Widget> [
 
                 DrawerHeader(
                   decoration: BoxDecoration(
-                    color: Colors.brown,
+                    color: Colors.lightGreen,
 
                   ),
-                  child: Text(
-                    'Training model',
-                    style: TextStyle(
-                      color: Colors.green,
-                      fontSize: 24,
+                  child: UserAccountsDrawerHeader(
+                    decoration: BoxDecoration(color: Colors.green),
+                      accountName: Text("Abhishek Mishra",
+                      style: TextStyle(fontSize: 18),
+                      ),
+                      accountEmail: Text("bhaskorcse28@gmail.com"),
+                    currentAccountPictureSize: Size.square(50),
+                    currentAccountPicture:CircleAvatar(
+                      backgroundColor: Color.fromARGB(255,165,255,137),
+                      child: Text(
+                        "A",
+                        style: TextStyle(fontSize: 30.0,color: Colors.blue),
+
+                      ),
+
+
 
                     ),
 
-                  ),
+
+
+                  )
 
 
                 ),
 
                 ListTile(
 
-                  title: Text('Your Account'),
-                  leading: Icon(Icons.account_box),
+                  title: Text('My Profile'),
+                  leading: Icon(Icons.person),
+
                 ),
 
                 ListTile(
 
-                  title: Text('Notifications'),
-                  leading: Icon(Icons.notification_add),
+                  title: Text('My Course'),
+                  leading: Icon(Icons.book),
                 ),
                 ListTile(
 
-                  title: Text('Calls'),
-                  leading: Icon(Icons.call),
+                  title: Text('Go Premium'),
+                  leading: Icon(Icons.workspace_premium),
+                ),
+                ListTile(
+
+                  title: Text('Edit Profile'),
+                  leading: Icon(Icons.edit),
                 ),
 
                 ListTile(
